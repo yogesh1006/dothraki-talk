@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dothraki talk</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+       
+       
+        body {
+            font-family: 'Roboto Mono', monospace;
+            background-color: #4dddc5;
+            background-image: url("/images/wp2131826-game-of-thrones-hd-wallpapers.jpg");
+            background-size:auto;
+            
+            /* background-image: url("https://img.favpng.com/17/15/17/daenerys-targaryen-world-of-a-song-of-ice-and-fire-house-targaryen-fire-and-blood-dothraki-png-favpng-fhtgc7wrcD4NxrHxdruMV6r0G_t.jpg"); */
+        }
+
+        textarea {
+            width: 90%;
+            height: 10vh;
+            margin: 1rem;
+            padding: 1rem;
+        }
+
+        #output {
+            border: 1px solid black;
+            background-color: white;
+            width: 90%;
+            height: 10vh;
+            margin: 1rem;
+            padding: 1rem;
+        }
+
+        #btn-translate {
+            padding: 1rem 1.5rem;
+            text-align: center;
+            margin: 1rem;
+            font-size: larger;
+            border-radius: 1rem;
+        }
+
+        h1 {
+            padding: 2rem;
+            margin: 0px;
+        }
+
+        .foo-info {
+            padding-top: 5rem;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .txt-output {
+            margin-bottom: 2rem;
+            margin-left: 1rem;
+        }
+
+        #txt-input {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">translate dothraki</h1>
+
+    <textarea id="txt-input"
+        placeholder="Put here any sentence and we will translate it to dothraki...."></textarea>
+    <button id="btn-translate">translate to dothraki</button>
+    <div class="txt-output" style="font-size: 1.5rem;">Output will come here 👇</div>
+
+    <div id="output"></div>
+
+    <footer class="foo-info">
+        <h3>About</h3>
+        <p>Are you a dothraki fan? Convert your text from English to Dothraki language.</p>
+    </footer>
+
+
+    <script src="app.js" type="text/javascript"></script>
+
+</body>
+
+</html>
