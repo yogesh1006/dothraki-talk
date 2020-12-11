@@ -19,27 +19,30 @@
         }
 
         textarea {
+            background-color: unset;
             width: 90%;
             height: 10vh;
             margin: 1rem;
             padding: 1rem;
-        }
+              font-weight:bold;
+      }
 
         #output {
             border: 1px solid black;
-            background-color: white;
-            width: 90%;
+            /* background-color: white; */
+            width: 30%;
             height: 10vh;
             margin: 1rem;
             padding: 1rem;
         }
 
         #btn-translate {
-            padding: 1rem 1.5rem;
+            background-color: unset;
+            border: 1px solid black;
+             padding: 1rem 1.5rem;
             text-align: center;
             margin: 1rem;
             font-size: larger;
-            border-radius: 1rem;
         }
 
         h1 {
@@ -68,7 +71,7 @@
     <h1 style="text-align: center;">translate dothraki</h1>
 
     <textarea id="txt-input"
-        placeholder="Put here any sentence and we will translate it to dothraki...."></textarea>
+        placeholder="Put here any sentence in English and we will translate it to dothraki...."></textarea>
     <button id="btn-translate">translate to dothraki</button>
     <div class="txt-output" style="font-size: 1.5rem;">Output will come here 👇</div>
 
