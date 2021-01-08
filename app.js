@@ -17,7 +17,7 @@ function errorHandler(error) {
 
 
 btnTranslate.addEventListener("click", function clickEventHandler() {
-    //outputDiv.innerText="sdfghjkjhgfdfgh " + txtInput.value;
+    outputDiv.innerText="sdfghjkjhgfdfgh " + txtInput.value;
     var inputText = txtInput.value;
     fetch(getTranslationUrl(inputText))
         .then(response => response.json())
@@ -25,6 +25,5 @@ btnTranslate.addEventListener("click", function clickEventHandler() {
             var translatedText = json.contents.translated;
             outputDiv.innerText = translatedText;
         })
-        //.then(json=> console.log(json.contents.translated))
         .catch(errorHandler)
 })
